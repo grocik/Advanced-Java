@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="TestPersistence" transaction-type="RESOURCE_LOCAL">
+        <class>javax.persistence.EntityManager</class>
+        <class>com.example.demo.DTO.Actor</class>
+        <class>com.example.demo.DTO.Address</class>
+        <class>com.example.demo.DatabaseModel.Category</class>
+        <class>com.example.demo.DTO.City</class>
+        <class>com.example.demo.DTO.Country</class>
+        <class>com.example.demo.DTO.Customer</class>
+        <class>com.example.demo.DTO.Film</class>
+        <class>com.example.demo.DTO.FilmActor</class>
+        <class>com.example.demo.DatabaseModel.FilmCategory</class>
+        <class>com.example.demo.DTO.FilmText</class>
+        <class>com.example.demo.DTO.Inventory</class>
+        <class>com.example.demo.DTO.Language</class>
+        <class>com.example.demo.DTO.Payment</class>
+        <class>com.example.demo.DTO.Rental</class>
+        <class>com.example.demo.DTO.Staff</class>
+        <class>com.example.demo.DTO.Store</class>
+
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sakila" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="root" />
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/sakila"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="persistenceUnit">
+        <class>com.example.demo.DTO.Actor</class>
+        <class>com.example.demo.DTO.Address</class>
+        <class>com.example.demo.DTO.Category</class>
+        <class>com.example.demo.DTO.City</class>
+        <class>com.example.demo.DTO.Country</class>
+        <class>com.example.demo.DTO.Customer</class>
+        <class>com.example.demo.DTO.Film</class>
+        <class>com.example.demo.DTO.FilmActor</class>
+        <class>com.example.demo.DTO.FilmCategory</class>
+        <class>com.example.demo.DTO.FilmText</class>
+        <class>com.example.demo.DTO.Inventory</class>
+        <class>com.example.demo.DTO.Language</class>
+        <class>com.example.demo.DTO.Payment</class>
+        <class>com.example.demo.DTO.Rental</class>
+        <class>com.example.demo.DTO.Staff</class>
+        <class>com.example.demo.DTO.Store</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/sakila"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
